@@ -6,29 +6,34 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    private var exerciseCount = 0
-    private lateinit var exerciseCountTextView: TextView
+    private var contadorKm = 0
+    private lateinit var contadorKmTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        exerciseCountTextView = findViewById(R.id.exerciseCountTextView)
-        val incrementButton: Button = findViewById(R.id.incrementButton)
-        val resetButton: Button = findViewById(R.id.resetButton)
+        contadorKmTextView = findViewById(R.id.contadorKmTextView)
+        val adicionarKmButton: Button = findViewById(R.id.adicionarKmButton)
+        val removerKmButton: Button = findViewById(R.id.removerKmButton)
 
-        incrementButton.setOnClickListener {
-            exerciseCount++
-            updateExerciseCount()
+        adicionarKmButton.setOnClickListener {
+            contadorKm++
+            updatecontadorKm()
         }
 
-        resetButton.setOnClickListener {
-            exerciseCount = 0
-            updateExerciseCount()
+        removerKmButton.setOnClickListener {
+            if (contadorKm > 0){
+                contadorKm--
+            } else {
+                contadorKm = 0
+            }
+
+            updatecontadorKm()
         }
     }
 
-    private fun updateExerciseCount() {
-        exerciseCountTextView.text = exerciseCount.toString()
+    private fun updatecontadorKm() {
+        contadorKmTextView.text = contadorKm.toString()
     }
 }
