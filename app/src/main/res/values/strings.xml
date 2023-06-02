@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FitnessApp</string>
+    <string name="textoPerguntaQuilometragemDaCorrida">Quantos Km
+você correu hoje ?</string>
 </resources>
