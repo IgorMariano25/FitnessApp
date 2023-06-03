@@ -33,7 +33,7 @@
         android:textSize="16dp"
         android:textStyle="bold"
         android:backgroundTint="@color/black"
-        android:textColor="@color/verde"
+        android:textColor="@color/verde_lima"
         android:text="Adicionar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
