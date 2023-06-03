@@ -34,9 +34,11 @@
         android:textStyle="bold"
         android:backgroundTint="@color/black"
         android:textColor="@color/verde_lima"
-        android:text="Adicionar"
+        android:text="Adicionar 1km"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/verde_lima"/>
 
     <Button
         android:id="@+id/removerKmButton"
@@ -48,12 +50,14 @@
         android:textStyle="bold"
         android:backgroundTint="@color/black"
         android:textColor="@color/vermelho"
-        android:text="Remover"
+        android:text="Remover 1km"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/adicionarKmButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996" />
+        app:layout_constraintVertical_bias="0.996"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/vermelho"/>
 
     <TextView
         android:id="@+id/textView"
@@ -68,6 +72,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/contadorKmTextView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.112"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
