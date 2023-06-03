@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     private var contadorKm = 0
+    private var ultimoValorArmazenadoContadoKm = 0
     private lateinit var contadorKmTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,5 +36,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun updatecontadorKm() {
         contadorKmTextView.text = contadorKm.toString()
+        ultimoValorArmazenadoContadoKm = contadorKm
+    }
+
+    private fun getUltimoValorArmazenadoContadorKm() : Int{
+        return ultimoValorArmazenadoContadoKm
     }
 }
