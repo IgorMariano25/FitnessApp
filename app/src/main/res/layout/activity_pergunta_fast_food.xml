@@ -3,47 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="end"
     android:background="@color/azul_growth"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    tools:context=".PerguntaAcademia">
+    tools:context=".PerguntaFastFood">
 
     <ImageView
-        android:id="@+id/ivWourkoutAbdominal"
-        android:layout_width="362dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="36dp"
+        android:id="@+id/ivDonuts"
+        android:layout_width="379dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vetor_workout_abdominal" />
+        app:srcCompat="@drawable/vetor_donut_fast_food" />
 
     <TextView
-        android:id="@+id/tvPerguntaAcademia"
-        android:layout_width="374dp"
+        android:id="@+id/tvPerguntaFastFood"
+        android:layout_width="407dp"
         android:layout_height="65dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-light"
-        android:text="Quantas vezes na semana você costuma treinar ?"
+        android:text="Quantas vezes na semana você costuma comer fast food ?"
         android:textColor="@color/white"
         android:textSize="26dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/ivWourkoutAbdominal"
-        tools:layout_editor_absoluteX="34dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDonuts" />
 
     <LinearLayout
-        android:id="@+id/llRespostasAcademia"
+        android:id="@+id/llRespostasFastFood"
         android:layout_width="370dp"
         android:layout_height="300dp"
         android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaAcademia">
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaFastFood">
 
         <Button
-            android:id="@+id/btnRespostaNenhumaAcademia"
+            android:id="@+id/btnRespostaNenhumaFastFood"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
@@ -55,7 +55,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnRespostaEntre_1_vez_e_2_vezes_Academia"
+            android:id="@+id/btnRespostaEntre_1_vez_e_2_vezes_Fast_Food"
             android:layout_width="370dp"
             android:layout_height="1dp"
             android:layout_marginBottom="8dp"
@@ -67,7 +67,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnRespostaEntre_2_vezes_e_3_vezes_Academia"
+            android:id="@+id/btnRespostaEntre_2_vezes_e_3_vezes_Fast_Food"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
@@ -79,7 +79,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnRespostaEntre_3_vezes_e_4_vezes_Academia"
+            android:id="@+id/btnRespostaEntre_3_vezes_e_4_vezes_Fast_Food"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
@@ -91,7 +91,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnRespostaMaisDe4Vezes_Academia"
+            android:id="@+id/btnRespostaMaisDe4Vezes_Fast_Food"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="4dp"
@@ -103,32 +103,21 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/btnFragmentoConfResp"
-        android:layout_width="270dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="740dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
-        tools:layout_editor_absoluteX="61dp" />
-
-    <!--    <Button-->
-<!--        android:id="@+id/btnConfResp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="4dp"-->
-<!--        android:width="270dp"-->
-<!--        android:height="65dp"-->
-<!--        android:backgroundTint="@color/rosa_invertido"-->
-<!--        android:text="@string/btnConfirmarResposta"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="18dp"-->
-<!--        app:cornerRadius="100dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.495"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/llRespostasAcademia" />-->
+    <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="Confirmar resposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRespostasFastFood" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
