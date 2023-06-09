@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">FitnessApp</string>
-    <string name="textoPerguntaQuilometragemDaCorrida">Quantos Km
-você correu hoje ?</string>
+    <string name="PerguntaDescobrirNivelFitness">Precisamos te <font color="#009ae2"><b>conhecer melhor</b></font> para descobrir o seu <font color="#009ae2"><b>nível fitness</b></font>, por isso, elaboramos 5 perguntas <font color="#009ae2"><b>especialmente para você</b></font> !</string>
+    <string name="BoasVindasFitnessApp">Seja bem-vindo ao aplicativo FitnessApp !</string>
+    <string name="textoPerguntaLitrosDeAgua">Quantos litros de água você consome por dia ?</string>
+    <string name="textoBtnContinuar">Continuar...</string>
+    <string name="btnConfirmarResposta">Confirmar resposta</string>
 </resources>
