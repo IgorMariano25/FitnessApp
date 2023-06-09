@@ -1,45 +1,21 @@
 package br.com.comptar.fitnessapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    private var contadorKm = 0
-    private var ultimoValorArmazenadoContadoKm = 0
-    private lateinit var contadorKmTextView: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        contadorKmTextView = findViewById(R.id.contadorKmTextView)
-        val adicionarKmButton: Button = findViewById(R.id.adicionarKmButton)
-        val removerKmButton: Button = findViewById(R.id.removerKmButton)
+        // Obtém o nome passado na activity anterior
+        val nomeInformado = intent.getStringExtra("name")
 
-        adicionarKmButton.setOnClickListener {
-            contadorKm++
-            updatecontadorKm()
-        }
-
-        removerKmButton.setOnClickListener {
-            if (contadorKm > 0){
-                contadorKm--
-            } else {
-                contadorKm = 0
-            }
-
-            updatecontadorKm()
-        }
-    }
-
-    private fun updatecontadorKm() {
-        contadorKmTextView.text = contadorKm.toString()
-        ultimoValorArmazenadoContadoKm = contadorKm
-    }
-
-    private fun getUltimoValorArmazenadoContadorKm() : Int{
-        return ultimoValorArmazenadoContadoKm
+        // Exibe a mensagem de boas-vindas com o nome informado
+        val tvBoasVindas : TextView = findViewById(R.id.tvBoasVindas)
+        tvBoasVindas.text = "Bem-vindo, $nomeInformado!"
     }
 }
