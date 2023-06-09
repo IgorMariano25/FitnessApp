@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
         // Exibe a mensagem de boas-vindas com o nome informado
         val tvBoasVindas : TextView = findViewById(R.id.tvBoasVindas)
         tvBoasVindas.text = "Bem-vindo, $nomeInformado!"
+
+        val btnContinuar: Button = findViewById(R.id.btnContinuar)
+        btnContinuar.setOnClickListener {
+            val intent = Intent(this@MainActivity, PerguntaAcademia::class.java)
+            startActivity(intent)
+        }
     }
 }
