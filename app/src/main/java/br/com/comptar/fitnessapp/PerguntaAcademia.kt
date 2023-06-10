@@ -85,3 +85,18 @@ class PerguntaAcademia : AppCompatActivity() {
         ArmazenamentoRespostas.respostas[btnRespostaEntre_3_vezes_e_4_vezes_Academia.id] = 18
         ArmazenamentoRespostas.respostas[btnRespostaMaisDe4Vezes_Academia.id] = 20
     }
+
+    //Função que habilita o botão de confirmar resposta quando alguma opção é selecionada
+    private fun HabiltarButtonConfirmarResposta() {
+        btnConfirmaRespostaActivityPergunta1.setTextColor(Color.WHITE)
+        btnConfirmaRespostaActivityPergunta1.setBackgroundColor(cor_verde_btn_habilitado)
+        btnConfirmaRespostaActivityPergunta1.isEnabled = true
+    }
+
+    //Função que mantém o botão de confirmar resposta desabilitado até que alguma opção seja selecionada
+    private fun DesabilitarButtonConfirmarRespoasta() {
+            btnConfirmaRespostaActivityPergunta1.setTextColor(Color.WHITE)
+            btnConfirmaRespostaActivityPergunta1.setBackgroundColor(cor_cinza_btn_desabilitado)
+        btnConfirmaRespostaActivityPergunta1.isEnabled = false
+        }
+    }
