@@ -1,77 +1,62 @@
-<!-- activity_main.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wourkout_motivacional"
-    android:padding="16dp"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/contadorKmTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="20dp"
-        android:text="0"
-        android:textColor="@color/white"
-        android:textSize="70sp"
-        app:layout_constraintBottom_toTopOf="@+id/removerKmButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="254dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/textoPerguntaQuilometragemDaCorrida"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/contadorKmTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112"/>
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    tools:context=".PerguntaNome">
 
     <Button
-        android:id="@+id/adicionarKmButton"
-        android:layout_width="157dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="4dp"
-        android:textSize="16dp"
+        android:id="@+id/btnContinuar"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/azul_growth"
+        android:text="Continuar..."
+        android:textColor="@color/white"
+        android:textSize="22dp"
         android:textStyle="bold"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/verde_lima"
-        android:text="Adicionar 1km"
+        app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/verde_lima"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/removerKmButton"
-        android:layout_width="157dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="21dp"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/vermelho"
-        android:text="Remover 1km"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/adicionarKmButton"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="392dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/vermelho"/>
-    
+        app:srcCompat="@drawable/vetor_input_nome_login" />
+
+    <TextView
+        android:id="@+id/tvDigiteOSeuNome"
+        android:layout_width="291dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="104dp"
+        android:text="Digite o seu nome:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextNomeInformado"
+        android:layout_width="291dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
