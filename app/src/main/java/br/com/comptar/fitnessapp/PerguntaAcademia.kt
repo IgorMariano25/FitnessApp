@@ -13,6 +13,8 @@ class PerguntaAcademia : AppCompatActivity() {
     private lateinit var btnRespostaEntre_2_vezes_e_3_vezes_Academia: Button
     private lateinit var btnRespostaEntre_3_vezes_e_4_vezes_Academia: Button
     private lateinit var btnRespostaMaisDe4Vezes_Academia: Button
+    private lateinit var btnConfirmaRespostaActivityPergunta1: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pergunta_academia)
@@ -21,7 +23,7 @@ class PerguntaAcademia : AppCompatActivity() {
         val cor_cinza_btn_clicado = Color.rgb(97, 97, 97)
 
         // Alterando entre as telas ao clicar no botão de confirmar resposta
-        val btnConfirmaRespostaActivityPergunta1 = findViewById<Button>(R.id.btnFragmentoConfResp)
+        btnConfirmaRespostaActivityPergunta1 = findViewById<Button>(R.id.btnConfResp)
         btnConfirmaRespostaActivityPergunta1.setOnClickListener {
             val intent = Intent(this@PerguntaAcademia, PerguntaAgua::class.java)
             startActivity(intent)
