@@ -39,6 +39,7 @@ class PerguntaAcademia : AppCompatActivity() {
         btnRespostaNenhumaAcademia.setOnClickListener {
             btnRespostaNenhumaAcademia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaNenhumaAcademia.setTextColor(Color.WHITE)
+            HabiltarButtonConfirmarResposta()
         }
 
         // Altera a cor do botão com opção 1 VEZ - 2 VEZES, caso seja a resposta selecionada
@@ -46,6 +47,7 @@ class PerguntaAcademia : AppCompatActivity() {
         btnRespostaEntre_1_vez_e_2_vezes_Academia.setOnClickListener {
             btnRespostaEntre_1_vez_e_2_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_1_vez_e_2_vezes_Academia.setTextColor(Color.WHITE)
+            HabiltarButtonConfirmarResposta()
         }
 
         // Altera a cor do botão com opção 2 VEZES - 3 VEZES, caso seja a resposta selecionada
@@ -53,6 +55,7 @@ class PerguntaAcademia : AppCompatActivity() {
         btnRespostaEntre_2_vezes_e_3_vezes_Academia.setOnClickListener {
             btnRespostaEntre_2_vezes_e_3_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_2_vezes_e_3_vezes_Academia.setTextColor(Color.WHITE)
+            HabiltarButtonConfirmarResposta()
         }
 
         // Altera a cor do botão com opção 3 VEZES - 4 VEZES, caso seja a resposta selecionada
@@ -60,6 +63,7 @@ class PerguntaAcademia : AppCompatActivity() {
         btnRespostaEntre_3_vezes_e_4_vezes_Academia.setOnClickListener {
             btnRespostaEntre_3_vezes_e_4_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_3_vezes_e_4_vezes_Academia.setTextColor(Color.WHITE)
+            HabiltarButtonConfirmarResposta()
         }
 
         // Altera a cor do botão com opção MAIS DE 4 VEZES, caso seja a resposta selecionada
