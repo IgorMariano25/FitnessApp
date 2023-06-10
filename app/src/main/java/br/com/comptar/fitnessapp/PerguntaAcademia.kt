@@ -35,39 +35,35 @@ class PerguntaAcademia : AppCompatActivity() {
         }
 
         // Altera a cor do botão com opção NENHUMA, caso seja a resposta selecionada
-        val btnRespostaNenhumaAcademia = findViewById<Button>(R.id.btnRespostaNenhumaAcademia)
+        btnRespostaNenhumaAcademia = findViewById<Button>(R.id.btnRespostaNenhumaAcademia)
         btnRespostaNenhumaAcademia.setOnClickListener {
             btnRespostaNenhumaAcademia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaNenhumaAcademia.setTextColor(Color.WHITE)
         }
 
         // Altera a cor do botão com opção 1 VEZ - 2 VEZES, caso seja a resposta selecionada
-        val btnRespostaEntre_1_vez_e_2_vezes_Academia =
-            findViewById<Button>(R.id.btnRespostaEntre_1_vez_e_2_vezes_Academia)
+        btnRespostaEntre_1_vez_e_2_vezes_Academia = findViewById<Button>(R.id.btnRespostaEntre_1_vez_e_2_vezes_Academia)
         btnRespostaEntre_1_vez_e_2_vezes_Academia.setOnClickListener {
             btnRespostaEntre_1_vez_e_2_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_1_vez_e_2_vezes_Academia.setTextColor(Color.WHITE)
         }
 
         // Altera a cor do botão com opção 2 VEZES - 3 VEZES, caso seja a resposta selecionada
-        val btnRespostaEntre_2_vezes_e_3_vezes_Academia =
-            findViewById<Button>(R.id.btnRespostaEntre_2_vezes_e_3_vezes_Academia)
+        btnRespostaEntre_2_vezes_e_3_vezes_Academia = findViewById<Button>(R.id.btnRespostaEntre_2_vezes_e_3_vezes_Academia)
         btnRespostaEntre_2_vezes_e_3_vezes_Academia.setOnClickListener {
             btnRespostaEntre_2_vezes_e_3_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_2_vezes_e_3_vezes_Academia.setTextColor(Color.WHITE)
         }
 
         // Altera a cor do botão com opção 3 VEZES - 4 VEZES, caso seja a resposta selecionada
-        val btnRespostaEntre_3_vezes_e_4_vezes_Academia =
-            findViewById<Button>(R.id.btnRespostaEntre_3_vezes_e_4_vezes_Academia)
+        btnRespostaEntre_3_vezes_e_4_vezes_Academia = findViewById<Button>(R.id.btnRespostaEntre_3_vezes_e_4_vezes_Academia)
         btnRespostaEntre_3_vezes_e_4_vezes_Academia.setOnClickListener {
             btnRespostaEntre_3_vezes_e_4_vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaEntre_3_vezes_e_4_vezes_Academia.setTextColor(Color.WHITE)
         }
 
         // Altera a cor do botão com opção MAIS DE 4 VEZES, caso seja a resposta selecionada
-        val btnRespostaMaisDe4Vezes_Academia =
-            findViewById<Button>(R.id.btnRespostaMaisDe4Vezes_Academia)
+        btnRespostaMaisDe4Vezes_Academia = findViewById<Button>(R.id.btnRespostaMaisDe4Vezes_Academia)
         btnRespostaMaisDe4Vezes_Academia.setOnClickListener {
             btnRespostaMaisDe4Vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaMaisDe4Vezes_Academia.setTextColor(Color.WHITE)
