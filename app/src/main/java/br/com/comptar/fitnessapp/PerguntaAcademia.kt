@@ -71,6 +71,17 @@ class PerguntaAcademia : AppCompatActivity() {
         btnRespostaMaisDe4Vezes_Academia.setOnClickListener {
             btnRespostaMaisDe4Vezes_Academia.setBackgroundColor(cor_cinza_btn_clicado)
             btnRespostaMaisDe4Vezes_Academia.setTextColor(Color.WHITE)
+            HabiltarButtonConfirmarResposta()
         }
+        DesabilitarButtonConfirmarRespoasta()
+        atribuirValorResposta()
     }
-}
+
+    // Função para adicionar um valor ao botão quando ele for clicacado
+    fun atribuirValorResposta() {
+        ArmazenamentoRespostas.respostas[btnRespostaNenhumaAcademia.id] = 5
+        ArmazenamentoRespostas.respostas[btnRespostaEntre_1_vez_e_2_vezes_Academia.id] = 8
+        ArmazenamentoRespostas.respostas[btnRespostaEntre_2_vezes_e_3_vezes_Academia.id] = 12
+        ArmazenamentoRespostas.respostas[btnRespostaEntre_3_vezes_e_4_vezes_Academia.id] = 18
+        ArmazenamentoRespostas.respostas[btnRespostaMaisDe4Vezes_Academia.id] = 20
+    }
