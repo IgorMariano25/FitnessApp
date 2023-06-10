@@ -15,6 +15,11 @@ class PerguntaAcademia : AppCompatActivity() {
     private lateinit var btnRespostaMaisDe4Vezes_Academia: Button
     private lateinit var btnConfirmaRespostaActivityPergunta1: Button
 
+    //Criando cor para o botão desabilitado
+    val cor_cinza_btn_desabilitado = Color.rgb(128,128,128)
+    //Criando cor para o botão habilitado
+    val cor_verde_btn_habilitado = Color.rgb(0,189,133)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pergunta_academia)
