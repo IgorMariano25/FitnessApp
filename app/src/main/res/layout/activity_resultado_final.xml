@@ -111,15 +111,17 @@
             tools:layout_editor_absoluteY="776dp" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/ivLogoGrowthSuplementos"
-        android:layout_width="200dp"
-        android:layout_height="229dp"
-        android:layout_marginTop="632dp"
+    <ImageButton
+        android:id="@+id/ImageButtonLogoGrowthSuplementos"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
         app:srcCompat="@drawable/logo_growth_suplementos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

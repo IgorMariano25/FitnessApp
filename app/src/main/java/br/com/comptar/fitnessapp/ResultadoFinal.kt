@@ -34,5 +34,13 @@ class ResultadoFinal : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, "É de whey Protein, galera, relaxa \uD83D\uDE02\uD83D\uDE02\uD83D\uDE02")
             startActivity(intent)
         }
+
+        val ImageButtonLogotGrowthSite = findViewById<ImageButton>(R.id.ImageButtonLogoGrowthSuplementos)
+        ImageButtonLogotGrowthSite.setOnClickListener {
+            val URL = Uri.parse("https://www.gsuplementos.com.br/")
+            val intent = Intent(Intent.ACTION_VIEW, URL)
+            startActivity(intent)
+        }
+        exibirResultadoFinal()
     }
 }
