@@ -1,9 +1,12 @@
 package br.com.comptar.fitnessapp
 
+import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class ResultadoFinal : AppCompatActivity() {
@@ -42,5 +45,12 @@ class ResultadoFinal : AppCompatActivity() {
             startActivity(intent)
         }
         exibirResultadoFinal()
+    }
+
+    private fun exibirResultadoFinal() {
+
+        val tvNotaFitness = findViewById<TextView>(R.id.tvNotaFitness)
+        tvNotaFitness.text = SharedData.totalScore.toString()
+
     }
 }
