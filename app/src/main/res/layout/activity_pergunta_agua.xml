@@ -6,7 +6,6 @@
     android:background="@color/azul_growth"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingBottom="16dp"
     tools:context=".PerguntaAgua">
 
     <ImageView

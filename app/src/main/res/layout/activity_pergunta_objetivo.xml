@@ -44,61 +44,61 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPerguntaObjetivo">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnEmagrecer"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="Menos de 5 horas"
+            android:text="Emagrecer"
             android:textColor="@color/azul_growth"
             android:textSize="24dp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnGanharMusculo"
             android:layout_width="370dp"
             android:layout_height="1dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="5 horas - 6 horas"
+            android:text="Ganhar músculo"
             android:textColor="@color/azul_growth"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnCondicionamentoFisico"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="6 horas - 7 horas"
+            android:text="Condicionamento Físico"
             android:textColor="@color/azul_growth"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnSaude"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="7 horas - 8 horas"
+            android:text="Saúde"
             android:textColor="@color/azul_growth"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnEstetica"
             android:layout_width="370dp"
             android:layout_height="0dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="Mais de 8 horas"
+            android:text="Estética"
             android:textColor="@color/azul_growth"
             android:textSize="20sp"
             android:textStyle="bold" />

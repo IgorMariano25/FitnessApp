@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+    tools:context=".BoasVindas">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -46,20 +46,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.781" />
 
+<!--    <Button-->
+<!--        android:id="@+id/btnContinuar"-->
+<!--        android:layout_width="260dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginBottom="36dp"-->
+<!--        android:backgroundTint="@color/azul_growth"-->
+<!--        android:text="@string/textoBtnContinuar"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="22dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
-    <Button
-        android:id="@+id/btnContinuar"
-        android:layout_width="260dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="@color/azul_growth"
-        android:text="@string/textoBtnContinuar"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:textStyle="bold"
-        app:cornerRadius="100dp"
+    <FrameLayout
+        android:id="@+id/btnContinuarFrameLayout"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

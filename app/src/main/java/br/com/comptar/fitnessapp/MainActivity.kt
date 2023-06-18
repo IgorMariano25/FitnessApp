@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(){
     btnContinuar.setOnClickListener {
         val editTextNomeInformado: EditText = findViewById(R.id.editTextNomeInformado)
         val nomeInformado = editTextNomeInformado.text.toString().trim()
+        SharedData.name = nomeInformado
         if (nomeInformado.isNotEmpty() && nomeInformado != "Por favor, insira um nome !" ){
             val intent = Intent(this@MainActivity, BoasVindas::class.java)
             intent.putExtra("name", nomeInformado)

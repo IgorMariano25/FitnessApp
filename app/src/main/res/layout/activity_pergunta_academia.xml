@@ -103,32 +103,21 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/btnFragmentoConfResp"
-        android:layout_width="270dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="740dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
-        tools:layout_editor_absoluteX="61dp" />
-
-    <!--    <Button-->
-<!--        android:id="@+id/btnConfResp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="4dp"-->
-<!--        android:width="270dp"-->
-<!--        android:height="65dp"-->
-<!--        android:backgroundTint="@color/rosa_invertido"-->
-<!--        android:text="@string/btnConfirmarResposta"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="18dp"-->
-<!--        app:cornerRadius="100dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.495"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/llRespostasAcademia" />-->
+        <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="@string/btnConfirmarResposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRespostasAcademia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

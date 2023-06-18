@@ -28,8 +28,6 @@ class PerguntaAgua : AppCompatActivity() {
         // Criando uma nova cor para adicionar ao botão
         val cor_cinza_btn_clicado = Color.rgb(97, 97, 97)
 
-        val respostaPerguntaAcademia = intent.getIntExtra("respostaPerguntaAcademia", 0)
-
         // Alterando entre as telas ao clicar no botão de confirmar resposta
         btnConfirmaRespostaActivityPergunta2 = findViewById<Button>(R.id.btnConfResp)
         btnConfirmaRespostaActivityPergunta2.setOnClickListener {

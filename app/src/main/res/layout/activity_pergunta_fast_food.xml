@@ -25,7 +25,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-light"
-        android:text="Quantas vezes na semana você costuma comer fast food ?"
+        android:text="Quantas vezes na semana você costuma comer fast food?"
         android:textColor="@color/white"
         android:textSize="26dp"
         android:textStyle="bold"
@@ -61,7 +61,7 @@
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:text="1 vez- 2 vezes"
+            android:text="1 vez - 2 vezes"
             android:textColor="@color/azul_growth"
             android:textSize="20sp"
             android:textStyle="bold" />

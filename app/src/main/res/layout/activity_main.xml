@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:paddingBottom="16dp"
-    tools:context=".PerguntaNome">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnContinuar"
