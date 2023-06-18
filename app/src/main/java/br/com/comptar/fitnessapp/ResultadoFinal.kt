@@ -1,6 +1,6 @@
 package br.com.comptar.fitnessapp
 
-import android.app.Activity
+
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -13,6 +13,11 @@ class ResultadoFinal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado_final)
+
+        val nomeInformado = SharedData.name
+
+        val tvNomeResultadoFinal : TextView = findViewById(R.id.tvNomeResultadoFinal)
+        tvNomeResultadoFinal.text = "Parabéns, $nomeInformado !"
 
         val btnSiteGrowth = findViewById<Button>(R.id.btnSiteGwothSuplementos)
         btnSiteGrowth.setOnClickListener {
