@@ -22,7 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FragmentoBotao"
+            android:name=".FragmentoBotaoContinuar"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".FragmentoBotaoPortifolioGitHub"
             android:exported="true" >
         </activity>
         <activity

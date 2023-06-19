@@ -14,6 +14,12 @@ class ResultadoFinal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado_final)
 
+        if(savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.btnRepositórioGitHub, FragmentoBotaoPortifolioGitHub())
+                .commit()
+        }
+
         val nomeInformado = SharedData.name
 
         val tvNomeResultadoFinal : TextView = findViewById(R.id.tvNomeResultadoFinal)

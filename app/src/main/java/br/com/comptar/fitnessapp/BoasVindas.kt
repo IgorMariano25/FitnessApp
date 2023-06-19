@@ -14,7 +14,7 @@ class BoasVindas : AppCompatActivity() {
 
         if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.btnContinuarFrameLayout, FragmentoBotao())
+                .replace(R.id.btnContinuarFrameLayout, FragmentoBotaoContinuar())
                 .commit()
         }
 
