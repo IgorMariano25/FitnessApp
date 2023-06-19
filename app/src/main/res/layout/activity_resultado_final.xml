@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvResultadoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A sua nota fitness foi:"
+        android:textColor="@color/azul_growth"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeResultadoFinal" />
+
+    <TextView
+        android:id="@+id/tvNotaFitness"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/azul_growth"
+        android:textSize="80dp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoFinal" />
+
+    <FrameLayout
+        android:id="@+id/btnRepositórioGitHub"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/tvCanaisDeAtendimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Canais de atendimento"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRepositórioGitHub" />
+
+    <LinearLayout
+        android:id="@+id/llCanaisDeAtendimentoGrowth"
+        android:layout_width="230dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ImageButtonLogoGrowthSuplementos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCanaisDeAtendimento">
+
+        <Button
+            android:id="@+id/btnEmailGwothSuplementos"
+            android:layout_width="230dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:text="✉️ Enviar Email"
+            android:textColor="@color/azul_growth"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.636"
+            app:strokeColor="@color/azul_growth"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/btnTelefoneGrowthSuplementos"
+            android:layout_width="230dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:text="📞 Ligar"
+            android:textColor="@color/azul_growth"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.739"
+            app:strokeColor="@color/azul_growth"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/btnSiteGwothSuplementos"
+            android:layout_width="230dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:text="🌐 Acessar Site"
+            android:textColor="@color/azul_growth"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/azul_growth"
+            app:strokeWidth="3dp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="776dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ImageButtonLogoGrowthSuplementos"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        app:srcCompat="@drawable/logo_growth_suplementos" />
+
+    <TextView
+        android:id="@+id/tvNomeResultadoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text=""
+        android:textColor="@color/azul_growth"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

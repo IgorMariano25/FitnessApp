@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_growth"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".PerguntaHorasDormidas">
+
+    <ImageView
+        android:id="@+id/ivBebeDormindo"
+        android:layout_width="375dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vetor_sono" />
+
+    <TextView
+        android:id="@+id/tvPerguntasDormidas"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Quantas horas por dia você costuma dormir ? "
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBebeDormindo" />
+
+    <LinearLayout
+        android:id="@+id/llRespostasHorasDormidas"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntasDormidas">
+
+        <Button
+            android:id="@+id/btnMenosDe5Horas"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Menos de 5 horas"
+            android:textColor="@color/azul_growth"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_5_horas_e_6_horas"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="5 horas - 6 horas"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_6_horas_e_7_horas"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="6 horas - 7 horas"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_7_horas_e_8_horas"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="7 horas - 8 horas"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMaisDe8Horas"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Mais de 8 horas"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="Confirmar resposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRespostasHorasDormidas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

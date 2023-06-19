@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_growth"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".PerguntaObjetivo">
+
+    <ImageView
+        android:id="@+id/ivMirandoNoAlvo"
+        android:layout_width="362dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vetor_objetivo_alvo" />
+
+    <TextView
+        android:id="@+id/tvPerguntaObjetivo"
+        android:layout_width="413dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Qual é o seu objetivo na academia ?"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMirandoNoAlvo" />
+
+    <LinearLayout
+        android:id="@+id/llRespostasObjetivo"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaObjetivo">
+
+        <Button
+            android:id="@+id/btnEmagrecer"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Emagrecer"
+            android:textColor="@color/azul_growth"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGanharMusculo"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Ganhar músculo"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCondicionamentoFisico"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Condicionamento Físico"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSaude"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Saúde"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEstetica"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Estética"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="Confirmar resposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRespostasObjetivo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

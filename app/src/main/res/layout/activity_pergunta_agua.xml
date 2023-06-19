@@ -1,0 +1,124 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_growth"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".PerguntaAgua">
+
+    <ImageView
+        android:id="@+id/ivGotaDeAgua"
+        android:layout_width="334dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vetor_pingo_de_agua" />
+
+    <TextView
+        android:id="@+id/tvPerguntaLitrosDeAgua"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textoPerguntaLitrosDeAgua"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ivGotaDeAgua"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <LinearLayout
+        android:id="@+id/llRespostasLitrosDeAgua"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaLitrosDeAgua">
+
+        <Button
+            android:id="@+id/btnMenosDe1Litro"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Menos de 1 Litro"
+            android:textColor="@color/azul_growth"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_1_Litro_e_2_litros"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="1 litro - 2 litros"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_2_Litros_e_3_litros"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="2 litros - 3 litros"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEntre_3_Litros_e_4_litros"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="3 litros - 4 litros"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMaisDe4Litros"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Mais de 4 litros"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="740dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="Confirmar resposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

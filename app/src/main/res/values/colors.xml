@@ -8,6 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="preto_transparencia_25_por_cento">#59000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="verde">#26ea00</color>
+    <color name="verde_lima">#26ea00</color>
+    <color name="verde_agua">#23FC8A</color>
     <color name="vermelho">#fb0e22</color>
+    <color name="vermelho_growth"> #ff0000</color>
+    <color name="azul_agua">#005bd8</color>
+    <color name="azul">#098dff</color>
+    <color name="azul_growth">#009ae2</color>
+    <color name="rosa">#ff92b2</color>
+    <color name="rosa_invertido">#00bd85</color>
+    <color name="mustarda">#ffdb58</color>
+    <color name="mustarda_gold">#ffd700</color>
+    <color name="cinza">#b0b0b0</color>
 </resources>

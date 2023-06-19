@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_growth"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".PerguntaAcademia">
+
+    <ImageView
+        android:id="@+id/ivWourkoutAbdominal"
+        android:layout_width="362dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vetor_workout_abdominal" />
+
+    <TextView
+        android:id="@+id/tvPerguntaAcademia"
+        android:layout_width="374dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Quantas vezes na semana você costuma treinar ?"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ivWourkoutAbdominal"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <LinearLayout
+        android:id="@+id/llRespostasAcademia"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaAcademia">
+
+        <Button
+            android:id="@+id/btnRespostaNenhumaAcademia"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Nenhuma"
+            android:textColor="@color/azul_growth"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRespostaEntre_1_vez_e_2_vezes_Academia"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="1 vez- 2 vezes"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRespostaEntre_2_vezes_e_3_vezes_Academia"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="2 vezes - 3 vezes"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRespostaEntre_3_vezes_e_4_vezes_Academia"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="3 vezes - 4 vezes"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRespostaMaisDe4Vezes_Academia"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Mais de 4 vezes"
+            android:textColor="@color/azul_growth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <Button
+        android:id="@+id/btnConfResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="270dp"
+        android:height="65dp"
+        android:backgroundTint="@color/rosa_invertido"
+        android:text="@string/btnConfirmarResposta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRespostasAcademia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
